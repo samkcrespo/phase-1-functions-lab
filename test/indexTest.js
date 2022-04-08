@@ -31,7 +31,6 @@ describe('index.js', function() {
     it('returns the distance travelled in feet', function() {
       expect(distanceTravelledInFeet(43, 48)).to.equal(1320);
     });
-
     it('returns a distance in feet', function() {
       expect(distanceTravelledInFeet(50, 60)).to.equal(2640);
     });
@@ -47,7 +46,7 @@ describe('index.js', function() {
     });
 
     it('charges 2 cents per foot when total feet travelled is between 400 and 2000 (remember the first 400 feet are free!)', function() {
-      // total feet travelled is 528, minus the first 400 feet, comes to 128 -> 2.56
+      // total feet traveled is 528, minus the first 400 feet, comes to 128 -> 2.56
       expect(calculatesFarePrice(34, 32)).to.equal(2.56);
     });
 
